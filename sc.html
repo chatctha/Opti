@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcuts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .shortcut-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            min-height: 120px;
+        }
+
+        .shortcut-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .shortcut-button i {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        /* Icon colors */
+        .fa-chart-bar { color: #F2C811; }
+        .fa-mobile-screen-button { color: #742774; }
+        .fa-gears { color: #0066FF; }
+        .fa-youtube { color: #FF0000; }
+
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" class="shortcut-button">
+            <i class="fas fa-chart-bar"></i>
+            <span>Power BI</span>
+        </a>
+        <a href="#" class="shortcut-button">
+            <i class="fas fa-mobile-screen-button"></i>
+            <span>Power App</span>
+        </a>
+        <a href="#" class="shortcut-button">
+            <i class="fas fa-gears"></i>
+            <span>Power Automate</span>
+        </a>
+        <a href="#" class="shortcut-button">
+            <i class="fab fa-youtube"></i>
+            <span>Youtube</span>
+        </a>
+    </div>
+
+</body>
+</html>
